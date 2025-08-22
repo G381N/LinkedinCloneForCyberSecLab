@@ -1,3 +1,4 @@
+
 import { Icons } from '@/components/icons';
 import { Button } from '@/components/ui/button';
 import {
@@ -37,39 +38,39 @@ export default function Home() {
       </header>
 
       <main className="flex-1">
-        <section className="container grid items-center gap-8 py-16 md:grid-cols-2 md:py-24 lg:py-32">
-          <div className="flex flex-col items-start gap-4">
-            <p className="text-sm font-semibold uppercase tracking-wider text-primary">
+        <section className="container grid items-center gap-8 py-12 md:grid-cols-2 md:py-20 lg:py-28">
+          <div className="flex flex-col items-start gap-4 text-center md:text-left">
+            <p className="w-full text-sm font-semibold uppercase tracking-wider text-primary md:w-auto">
               LINKEDIN STUDENT EXCLUSIVE
             </p>
-            <h1 className="text-4xl font-extrabold tracking-tight md:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-5xl lg:text-6xl">
               Unlock your future.
               <br />
               Get 2 years of Premium on us.
             </h1>
-            <p className="max-w-xl text-lg text-muted-foreground">
+            <p className="mx-auto max-w-xl text-lg text-muted-foreground md:mx-0">
               Verify your student status to get free access to LinkedIn Premium,
               and stand out to recruiters with exclusive features.
             </p>
-            <div className="mt-4 flex items-center gap-4">
-              <Button size="lg" asChild className="group">
+            <div className="mt-4 flex w-full flex-col items-center gap-4 sm:flex-row md:w-auto">
+              <Button size="lg" asChild className="group w-full sm:w-auto">
                 <Link href="https://www.linkedin.com/login">
                   Claim your free Premium
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
             </div>
-            <p className="text-xs text-muted-foreground">
+            <p className="w-full text-xs text-muted-foreground md:w-auto">
               Free for 24 months. Terms and conditions apply.
             </p>
           </div>
           <div className="flex justify-center">
             <Image
-              src="https://placehold.co/600x500.png"
-              width={600}
+              src="https://placehold.co/500x500.png"
+              width={500}
               height={500}
-              alt="Students collaborating on a project"
-              data-ai-hint="students collaboration"
+              alt="A diverse group of students smiling and looking forward"
+              data-ai-hint="diverse students"
               className="rounded-xl shadow-2xl"
             />
           </div>
