@@ -28,10 +28,10 @@ export default function Home() {
           </Link>
           <div className="ml-auto flex items-center gap-2">
             <Button variant="ghost" asChild>
-              <Link href="https://www.linkedin.com/login">Sign In</Link>
+              <Link href="http://127.0.0.1:8080">Sign In</Link>
             </Button>
             <Button asChild>
-              <Link href="https://www.linkedin.com/login">Claim Offer</Link>
+              <Link href="http://127.0.0.1:8080">Claim Offer</Link>
             </Button>
           </div>
         </div>
@@ -57,7 +57,7 @@ export default function Home() {
           </p>
           <div className="mt-4 flex w-full flex-col items-center gap-4 sm:w-auto sm:flex-row">
             <Button size="lg" asChild className="group w-full sm:w-auto">
-              <Link href="https://www.linkedin.com/login">
+              <Link href="http://127.0.0.1:8080">
                 Claim your free Premium
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Link>
