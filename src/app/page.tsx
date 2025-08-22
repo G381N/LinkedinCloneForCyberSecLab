@@ -47,7 +47,7 @@ export default function Home() {
             <br />
             <span className="relative inline-block">
               <span className="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 bg-foreground"></span>
-              <span className="text-muted-foreground">₹44,000 value</span>
+              <span className="text-muted-foreground">₹12,000 value</span>
             </span>
             <span className="text-primary"> FREE</span>
           </h1>
