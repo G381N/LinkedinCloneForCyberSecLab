@@ -39,14 +39,12 @@ export default function Home() {
 
       <main className="flex-1">
         <section className="container grid items-center gap-8 px-4 py-12 md:grid-cols-2 md:py-20 lg:gap-12 lg:py-28">
-          <div className="flex flex-col items-start gap-4 text-center md:text-left">
+          <div className="order-2 flex flex-col items-start gap-4 text-center md:order-1 md:text-left">
             <p className="w-full text-sm font-semibold uppercase tracking-wider text-primary md:w-auto">
               LINKEDIN STUDENT EXCLUSIVE
             </p>
             <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
-              Unlock your future.
-              <br className="hidden md:inline" />
-              Get 2 years of Premium on us.
+              Unlock your future. Get 2 years of Premium on us.
             </h1>
             <p className="mx-auto max-w-xl text-lg text-muted-foreground md:mx-0">
               Verify your student status to get free access to LinkedIn Premium,
@@ -64,13 +62,13 @@ export default function Home() {
               Free for 24 months. Terms and conditions apply.
             </p>
           </div>
-          <div className="flex justify-center">
+          <div className="order-1 flex justify-center md:order-2">
             <Image
-              src="https://placehold.co/600x401.png"
+              src="https://placehold.co/600x400.png"
               width={600}
-              height={401}
-              alt="A diverse group of students collaborating and looking optimistically towards their future careers"
-              data-ai-hint="happy students future"
+              height={400}
+              alt="A smiling student using a laptop, representing career development and success through LinkedIn Premium"
+              data-ai-hint="student laptop"
               className="h-auto w-full max-w-md rounded-xl shadow-2xl"
             />
           </div>
