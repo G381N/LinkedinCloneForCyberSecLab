@@ -24,7 +24,7 @@ export default function Home() {
         <div className="container flex h-16 items-center">
           <Link href="#" className="flex items-center gap-2 font-bold">
             <Icons.LinkedIn className="h-8 w-8 text-primary" />
-            <span className="text-xl font-semibold text-foreground">LinkedIn</span>
+            <span className="hidden text-xl font-semibold text-foreground sm:inline-block">LinkedIn</span>
           </Link>
           <div className="ml-auto flex items-center gap-2">
             <Button variant="ghost" asChild>
@@ -38,14 +38,14 @@ export default function Home() {
       </header>
 
       <main className="flex-1">
-        <section className="container grid items-center gap-8 py-12 md:grid-cols-2 md:py-20 lg:py-28">
+        <section className="container grid items-center gap-8 px-4 py-12 md:grid-cols-2 md:py-20 lg:gap-12 lg:py-28">
           <div className="flex flex-col items-start gap-4 text-center md:text-left">
             <p className="w-full text-sm font-semibold uppercase tracking-wider text-primary md:w-auto">
               LINKEDIN STUDENT EXCLUSIVE
             </p>
-            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
               Unlock your future.
-              <br />
+              <br className="hidden md:inline" />
               Get 2 years of Premium on us.
             </h1>
             <p className="mx-auto max-w-xl text-lg text-muted-foreground md:mx-0">
@@ -70,14 +70,14 @@ export default function Home() {
               width={600}
               height={600}
               alt="A diverse group of students collaborating and looking optimistically towards their future careers"
-              data-ai-hint="diverse students working"
-              className="rounded-xl shadow-2xl"
+              data-ai-hint="happy students future"
+              className="h-auto w-full max-w-md rounded-xl shadow-2xl"
             />
           </div>
         </section>
 
         <section className="w-full bg-card py-16 md:py-24">
-          <div className="container">
+          <div className="container px-4">
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
                 Everything you get with Premium
@@ -87,7 +87,7 @@ export default function Home() {
                 need.
               </p>
             </div>
-            <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {features.map((feature, i) => (
                 <Card key={i} className="text-center">
                   <CardHeader>
@@ -107,7 +107,7 @@ export default function Home() {
           </div>
         </section>
         
-        <section className="container py-16 md:py-24">
+        <section className="container px-4 py-16 md:py-24">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
               Get started in three easy steps
@@ -138,7 +138,7 @@ export default function Home() {
         </section>
 
         <section className="w-full bg-card py-16 md:py-24">
-          <div className="container mx-auto max-w-3xl">
+          <div className="container mx-auto max-w-3xl px-4">
             <h2 className="text-center text-3xl font-bold tracking-tight sm:text-4xl">
               Frequently Asked Questions
             </h2>
@@ -159,14 +159,14 @@ export default function Home() {
       </main>
 
       <footer className="border-t bg-background">
-        <div className="container flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0">
+        <div className="container flex flex-col items-center justify-between gap-4 px-4 py-10 md:h-24 md:flex-row md:py-0">
           <div className="flex items-center gap-2">
             <Icons.LinkedIn className="h-6 w-6 text-primary" />
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground text-center">
               &copy; {new Date().getFullYear()} LinkedIn Corporation
             </p>
           </div>
-          <nav className="flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground md:gap-6">
+          <nav className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-muted-foreground md:gap-6">
             <Link href="#" className="transition-colors hover:text-foreground">
               User Agreement
             </Link>
