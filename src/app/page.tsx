@@ -43,7 +43,7 @@ export default function Home() {
             <p className="w-full text-sm font-semibold uppercase tracking-wider text-primary md:w-auto">
               LINKEDIN STUDENT EXCLUSIVE
             </p>
-            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
               Unlock your future.
               <br />
               Get 2 years of Premium on us.
@@ -66,11 +66,11 @@ export default function Home() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="https://placehold.co/500x500.png"
-              width={500}
-              height={500}
-              alt="A diverse group of students smiling and looking forward"
-              data-ai-hint="diverse students"
+              src="https://placehold.co/600x600.png"
+              width={600}
+              height={600}
+              alt="A diverse group of students collaborating and looking optimistically towards their future careers"
+              data-ai-hint="diverse students working"
               className="rounded-xl shadow-2xl"
             />
           </div>
