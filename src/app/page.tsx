@@ -47,13 +47,13 @@ export default function Home() {
             <br />
             <span className="relative inline-block">
               <span className="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 bg-foreground"></span>
-              <span className="text-muted-foreground">₹79,000 value</span>
+              <span className="text-muted-foreground">₹44,000 value</span>
             </span>
             <span className="text-primary"> FREE</span>
           </h1>
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
             Verify your student status to get free access to LinkedIn Premium,
-            and stand out to recruiters with exclusive features.
+            and stand out to recruiters with exclusive features that help you get hired.
           </p>
           <div className="mt-4 flex w-full flex-col items-center gap-4 sm:w-auto sm:flex-row">
             <Button size="lg" asChild className="group w-full sm:w-auto">
@@ -72,11 +72,11 @@ export default function Home() {
           <div className="container px-4">
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                Everything you get with Premium
+                Everything you get with Premium Career
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
                 Tools to help you get hired faster and develop the skills you
-                need.
+                need to succeed.
               </p>
             </div>
             <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -180,65 +180,65 @@ const features = [
     icon: Eye,
     title: "Who's Viewed Your Profile",
     description:
-      "See who's been checking you out in the last 90 days and get insights on your viewers.",
+      "See who's curious about you in the last 90 days and gain insights into your viewers.",
   },
   {
     icon: Mail,
-    title: 'InMail Credits',
+    title: '5 InMail Credits/Month',
     description:
-      "Contact anyone on LinkedIn, even if you're not connected. Get 5 InMail credits per month.",
+      "Contact anyone on LinkedIn, including hiring managers, even if you're not connected.",
   },
   {
     icon: Briefcase,
     title: 'Top Applicant Jobs',
     description:
-      'Get noticed by recruiters and be featured as a top applicant when you apply for jobs.',
+      'Stand out from the crowd and get featured as a top applicant when you apply for jobs.',
   },
   {
     icon: BookOpen,
-    title: 'LinkedIn Learning',
+    title: '16,000+ Learning Courses',
     description:
-      'Access over 16,000+ expert-led courses to sharpen your skills and explore new ones.',
+      'Access expert-led courses on LinkedIn Learning to sharpen your skills and explore new ones.',
   },
 ];
 
 const steps = [
   {
-    title: 'Claim the Offer',
+    title: 'Claim Your Offer',
     description:
-      'Click the "Claim Offer" button and sign in to your LinkedIn account.',
+      'Click the button above and sign in to your LinkedIn account to begin.',
   },
   {
-    title: 'Verify Student Status',
+    title: 'Verify Your Student Status',
     description:
-      "We'll guide you through a quick verification process with our partner to confirm your eligibility.",
+      "We'll guide you through a quick verification with our partner to confirm your eligibility.",
   },
   {
     title: 'Enjoy Premium',
     description:
-      'Start using your Premium features immediately to boost your career prospects.',
+      'Start using your new Premium features immediately to boost your career prospects.',
   },
 ];
 
 const faqs = [
   {
-    question: 'Who is eligible for this offer?',
+    question: 'Who is eligible for this student offer?',
     answer:
-      'This offer is available to all full-time and part-time students at accredited higher education institutions. You will need to verify your student status to be eligible.',
+      'This offer is available to all full-time and part-time students at accredited colleges and universities. You will need to verify your student status to be eligible.',
   },
   {
     question: 'How long does the free Premium access last?',
     answer:
-      'You will receive 24 months (2 years) of LinkedIn Premium Career for free from the date you successfully verify your student status.',
+      'You will receive 24 months (2 years) of LinkedIn Premium Career for free, starting from the day you successfully verify your student status.',
   },
   {
-    question: 'What happens after the 2 years are over?',
+    question: 'What happens after the 2-year free trial ends?',
     answer:
-      'After your 24-month free period ends, your subscription will automatically terminate unless you choose to upgrade to a paid Premium plan. We will notify you before your free access expires.',
+      'After your 24-month free period ends, your subscription will automatically terminate unless you choose to upgrade to a paid Premium plan. We will notify you before your free access expires so you can make a decision.',
   },
   {
-    question: 'Can I cancel my free Premium subscription?',
+    question: 'Can I cancel my free Premium subscription at any time?',
     answer:
-      'Yes, you can cancel your Premium subscription at any time through your LinkedIn account settings without any charge.',
+      'Yes, you can cancel your Premium subscription at any time through your LinkedIn account settings without any charge. You will retain access until the end of your billing cycle.',
   },
 ];
