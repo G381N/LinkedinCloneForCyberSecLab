@@ -38,40 +38,34 @@ export default function Home() {
       </header>
 
       <main className="flex-1">
-        <section className="container grid items-center gap-8 px-4 py-12 md:grid-cols-2 md:py-20 lg:gap-12 lg:py-28">
-          <div className="order-2 flex flex-col items-start gap-4 text-center md:order-1 md:text-left">
-            <p className="w-full text-sm font-semibold uppercase tracking-wider text-primary md:w-auto">
-              LINKEDIN STUDENT EXCLUSIVE
-            </p>
-            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
-              Unlock your future. Get 2 years of Premium on us.
-            </h1>
-            <p className="mx-auto max-w-xl text-lg text-muted-foreground md:mx-0">
-              Verify your student status to get free access to LinkedIn Premium,
-              and stand out to recruiters with exclusive features.
-            </p>
-            <div className="mt-4 flex w-full flex-col items-center gap-4 sm:flex-row md:w-auto">
-              <Button size="lg" asChild className="group w-full sm:w-auto">
-                <Link href="https://www.linkedin.com/login">
-                  Claim your free Premium
-                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </Button>
-            </div>
-            <p className="w-full text-xs text-muted-foreground md:w-auto">
-              Free for 24 months. Terms and conditions apply.
-            </p>
+        <section className="container flex flex-col items-center gap-6 px-4 py-16 text-center md:py-24 lg:py-32">
+          <p className="text-sm font-semibold uppercase tracking-wider text-primary">
+            LINKEDIN STUDENT EXCLUSIVE
+          </p>
+          <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+            Get 2 years of Premium
+            <br />
+            <span className="relative inline-block">
+              <span className="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 bg-foreground"></span>
+              <span className="text-muted-foreground">$960 value</span>
+            </span>
+            <span className="text-primary"> FREE</span>
+          </h1>
+          <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
+            Verify your student status to get free access to LinkedIn Premium,
+            and stand out to recruiters with exclusive features.
+          </p>
+          <div className="mt-4 flex w-full flex-col items-center gap-4 sm:w-auto sm:flex-row">
+            <Button size="lg" asChild className="group w-full sm:w-auto">
+              <Link href="https://www.linkedin.com/login">
+                Claim your free Premium
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </Link>
+            </Button>
           </div>
-          <div className="order-1 flex justify-center md:order-2">
-            <Image
-              src="https://placehold.co/600x400.png"
-              width={600}
-              height={400}
-              alt="A smiling student using a laptop, representing career development and success through LinkedIn Premium"
-              data-ai-hint="student laptop"
-              className="h-auto w-full max-w-md rounded-xl shadow-2xl"
-            />
-          </div>
+          <p className="text-xs text-muted-foreground">
+            Free for 24 months. Terms and conditions apply.
+          </p>
         </section>
 
         <section className="w-full bg-card py-16 md:py-24">
